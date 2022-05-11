@@ -1,142 +1,104 @@
 \documentclass[12pt, a4paper]{article}
 
-\usepackage{titlesec, marvosym, enumitem, fancyhdr}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage[pdftex]{hyperref}
+\usepackage{hyperref, enumitem, geometry, tabularx, titlesec}
 
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.530in}
-\addtolength{\evensidemargin}{-0.375in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-1in}
-\addtolength{\textheight}{1in}
-
-\urlstyle{rm}
-
-\raggedbottom \raggedright
-\setlength{\tabcolsep}{0in}
-\setlength{\footskip}{5pt}
-
-% Sections formatting
-\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{#2 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeItemWithoutTitle}[1]{
-  \item\small{
-    {\vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{#3} & \textit{#4} \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\geometry{tmargin=0.65in, lmargin=0.6in, rmargin=0.6in}
 
 \renewcommand{\labelitemii}{$\circ$}
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\titlerule \vspace{-6pt}]
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%------------------------------------------------------NEW COMMAND----------------------------------------------------
+\newcommand{\resumeSection}[1]{
+    \section*{#1}
+}
 
-%-----------------------------
-%%%%%%  CV STARTS HERE  %%%%%%
+\newcommand{\resumeSectionItm}[4]{
+\item
+    \begin{tabular*}{0.96\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \textbf{#1} & #2 \\
+        \textit{\textbf{#3}} & \textit{#4}
+    \end{tabular*}
+}
+
+\newcommand{\resumeSectionSubItm}[2]{
+\item 
+    \textbf{\makebox[2.5cm]{#1:\hfill}}{#2}\vspace{-2mm}
+}
+
+\newcommand{\resumeSectionSubItmI}[1]{
+\item {#1}\vspace{-2mm}
+}
+
+\newcommand{\resumeSectionSubItmII}[2]{
+\item \textbf{#1: }{#2}\vspace{-2mm}
+}
+
 
 \begin{document}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{{\LARGE YUANHAO JIANG}} & Email:~~\href{mailto:}{yuanhaoj214@gmail.com}\\
-    \href{https://yuanhao-jiang.github.io/}{Portfolio: yuanhao-jiang.github.io} & Mobile:~~~~~~~~~~+44 07410581013\\
-    \href{https://github.com/Yuanhao-JIANG}{Github: ~~github.com/Yuanhao-JIANG}\\
-    \href{https://www.linkedin.com/in/yuanhao-jiang-94a024208}{LinkedIn: linkedin.com/in/yuanhao-jiang-94a024208}
-\end{tabular*}
+%--------------------------------------------------------HEADING------------------------------------------------------
+\begin{table}[htpb]
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r}
+        \textbf{\LARGE Yuanhao JIANG} & \\
+        \href{https://yuanhao-jiang.github.io/}{Portfolio: yuanhao-jiang.github.io} & 
+        Email: \href{mailto:}{yuanhaoj214@gmail.com}\\
+        \href{https://github.com/Yuanhao-JIANG}{Github: github.com/Yuanhao-JIANG} & Mobile: +44 07410581013\\
+        %\href{https://www.linkedin.com/in/yuanhao-jiang-94a024208}{LinkedIn: linkedin.com/in/yuanhao-jiang-94a024208}\\
+    \end{tabular*}
+\end{table}
+\vspace{-3mm}
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {The University of Edinburgh}{Scotland, UK}
-      {BSc Hons Mathematics and Statistics}{Sept 2020 - Present}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Year 1:} First class
-      \newline{}\textbf{Year 2:} Predicted first class}}}
-    \resumeSubHeadingListEnd
-	    
-\vspace{-5pt}
-\section{Skills Summary}
-	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~Python, Java, R, HTML, CSS, Latex, C, MIPS assembly}
-	\resumeSubItem{Tools}{~~~~~~~~~~~PyTorch, Git, Bootstrap, SQLite}
-	\resumeSubItem{Platforms}{~~~~Linux(Arch), MacOS, Windows}
+%-------------------------------------------------------EDUCATION-----------------------------------------------------
+\resumeSection{Education}
+\begin{itemize}[leftmargin=*]
+    \resumeSectionItm
+    {The University of Edinburgh}{Scotland, UK}
+    {BSc Hons Mathematics and Statistics}{Sept 2020 - Present}
+    \vspace{1.5mm}\newline 
+    \textit{\footnotesize\textbf{Year 1:} First class}\\
+    \textit{\footnotesize\textbf{Year 2:} Predicted first class}
+\end{itemize}
 
-\resumeSubHeadingListEnd
-\vspace{-5pt}
-\section{Experience}
-\resumeSubHeadingListStart
-    \resumeSubheading
+%-----------------------------------------------------SKILLS SUMMARY--------------------------------------------------
+\resumeSection{Skills Summary}
+\begin{itemize}[leftmargin=*]
+    \resumeSectionSubItm{Languages}{Python, Java, R, HTML, CSS, LaTex, C, MIPS assembly}
+    \resumeSectionSubItm{Tools}{PyTorch, Git, Bootstrap, SQLite}
+    \resumeSectionSubItm{Platforms}{Linux(Arch), MacOS, Windows}
+\end{itemize}
+\vspace{-2.5mm}
+
+%------------------------------------------------------EXPERIENCE-----------------------------------------------------
+\resumeSection{Experience}
+\begin{itemize}[leftmargin=*]
+    \resumeSectionItm
     {Careers Service, the University of Edinburgh}{Part time}
     {WeChat Assistant}{Sept 2021 - Present}
-        \resumeItemListStart
-            \resumeItem{}{In charge of the management of the WeChat account and related student and alumni groups}
-            \resumeItem{}
-            {Searching and examining opportunities and events across UK and China and post to student and alumni groups}
-            \resumeItem{}{Contact various employer to ensure the accuracy of the opportunities provided}
-        \resumeItemListEnd
-\resumeSubHeadingListEnd
+    \vspace{-2mm}
+    \begin{itemize}[leftmargin=*]
+        \resumeSectionSubItmI{In charge of the management of the WeChat account and related student and alumni groups}
+        \resumeSectionSubItmI
+        {Searching and examining opportunities and events across UK and China and post to student and alumni groups}
+        \resumeSectionSubItmI{Contact various employer to ensure the accuracy of the opportunities provided}
+    \end{itemize}
+\end{itemize}
+\vspace{-2.5mm}
 
-%-----------PROJECTS-----------------
-\vspace{-5pt}
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{Light weight game engine}{: Tech: Java, LWJGL, OpenGL, GLSL and so on.\\
-GitHub link: \href{https://github.com/Yuanhao-JIANG/Java\_game\_engine}{github.com/Yuanhao-JIANG/Java\_game\_engine}}
-\vspace{2pt}
-\resumeSubItem{Translation with RNN/Transformer}
-{: Tech: Machine Learning (RNN, Transformer), Python, PyTorch.
-GitHub link: \href{https://github.com/Yuanhao-JIANG/ml-translation}{github.com/Yuanhao-JIANG/ml-translation}}
-\resumeSubItem{Handwriting recognition with CNN structure (LeNet)}
-{: Tech: Machine Learning (CNN), Python, Pytorch.
-GitHub link: \href{https://github.com/Yuanhao-JIANG/ml-handwriting-recognition}
-{github.com/Yuanhao-JIANG/ml-handwriting-recognition}}
-\resumeSubItem{Light weight parkour game written by Processing}{: Tech: Processing.\\
-GitHub link: \href{https://github.com/Yuanhao-JIANG/Parkour_game}{github.com/Yuanhao-JIANG/Parkour\_game}}
-\resumeSubHeadingListEnd
-%\vspace{-5pt}
-
-%----------Publications------------
-%\section{Publications}
-%\resumeSubHeadingListStart
-%\resumeSubItem{Publication 1}{: Discription 1}
-%\vspace{2pt}
-%\resumeSubItem{Publication 2}{: Discription 2}
-%\resumeSubHeadingListEnd
-%\vspace{-5pt}
-
-%-----------Awards-----------------
-%\section{Honors and Awards}
-%\begin{description}[font=$\bullet$]
-%\item {Award 1}
-%\vspace{-5pt}
-%\item {Award 2}
-%\end{description}
+%-------------------------------------------------------PROJECTS------------------------------------------------------
+\resumeSection{Projects}
+\vspace{1mm}
+\begin{itemize}[leftmargin=*]
+    \resumeSectionSubItmII{Light weight game engine}{Tech: Java, LWJGL, OpenGL, GLSL and so on.\\
+        GitHub link: 
+        \href{https://github.com/Yuanhao-JIANG/Java\_game\_engine}{github.com/Yuanhao-JIANG/Java\_game\_engine}}
+    \resumeSectionSubItmII{Translation with RNN/Transformer}{Tech: Machine Learning (RNN, Transformer), Python, 
+        PyTorch. 
+        GitHub link: \href{https://github.com/Yuanhao-JIANG/ml-translation}{github.com/Yuanhao-JIANG/ml-translation}}
+    \resumeSectionSubItmII{Handwriting recognition with CNN structure (LeNet)}{Tech: Machine Learning (CNN), Python, 
+        Pytorch. GitHub link: \href{https://github.com/Yuanhao-JIANG/ml-handwriting-recognition}
+        {github.com/Yuanhao-JIANG/ml-handwriting-recognition}}
+    \resumeSectionSubItmII{Light weight parkour game written by Processing}{Tech: Processing.\\
+        GitHub link: \href{https://github.com/Yuanhao-JIANG/Parkour_game}{github.com/Yuanhao-JIANG/Parkour\_game}}
+\end{itemize}
 
 \end{document}
