@@ -7,7 +7,7 @@
 \renewcommand{\labelitemii}{$\circ$}
 \titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\titlerule \vspace{-6pt}]
 
-%------------------------------------------------------NEW COMMAND----------------------------------------------------
+%-----------------------------------------------------NEW COMMAND-----------------------------------------------------
 \newcommand{\resumeSection}[1]{
     \section*{#1}
 }
@@ -22,7 +22,7 @@
 
 \newcommand{\resumeSectionSubItm}[2]{
 \item 
-    \textbf{\makebox[2.5cm]{#1:\hfill}}{#2}\vspace{-2mm}
+    \textbf{\parbox[t]{4.6cm}{#1\hfill}}\parbox[t]{12.5cm}{#2}\vspace{-2mm}
 }
 
 \newcommand{\resumeSectionSubItmI}[1]{
@@ -35,7 +35,7 @@
 
 
 \begin{document}
-%--------------------------------------------------------HEADING------------------------------------------------------
+%-------------------------------------------------------HEADING-------------------------------------------------------
 \begin{table}[htpb]
     \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r}
         \textbf{\LARGE Yuanhao JIANG} & \\
@@ -47,6 +47,7 @@
 \end{table}
 \vspace{-3mm}
 
+%--------------------------------------------------------INTRO--------------------------------------------------------
 \resumeSection{Intro}
 \begin{itemize}[leftmargin=*]
     \resumeSectionSubItmI{Seeking for a better learning environment and inspirations, I chose to move from 
@@ -56,23 +57,25 @@
         Currently I am focusing on Machine Learning, Reinforcement Learning and related areas.}
 \end{itemize}
 
-%-------------------------------------------------------EDUCATION-----------------------------------------------------
+%------------------------------------------------------EDUCATION------------------------------------------------------
 \resumeSection{Education}
 \begin{itemize}[leftmargin=*]
     \resumeSectionItm
     {The University of Edinburgh}{Scotland, UK}
     {BSc Hons Mathematics and Statistics}{Sept 2020 - Present}
     \vspace{1.5mm}\newline 
-    \textit{\footnotesize\textbf{Year 1:} First class}\\
-    \textit{\footnotesize\textbf{Year 2:} Predicted first class}
+    \textit{\footnotesize\textbf{Year 1:} First Class}\\
+    \textit{\footnotesize\textbf{Year 2:} Predicted First Class}
 \end{itemize}
 
-%-----------------------------------------------------SKILLS SUMMARY--------------------------------------------------
+%----------------------------------------------------SKILLS SUMMARY---------------------------------------------------
 \resumeSection{Skills Summary}
 \begin{itemize}[leftmargin=*]
-    \resumeSectionSubItm{Languages}{Python, Java, R, HTML, CSS, LaTex, C, MIPS assembly}
-    \resumeSectionSubItm{Tools}{PyTorch, Git, Bootstrap, SQLite}
-    \resumeSectionSubItm{Platforms}{Linux(Arch), MacOS, Windows}
+    \resumeSectionSubItm{Programming \\Languages:}{Python, Java, R, HTML, CSS, LaTex, C, Processing, MIPS assembly}
+    \resumeSectionSubItm{Tools \& Frameworks:}{VIM, PyTorch, Git, LWJGL, Bootstrap, SQLite}
+    \resumeSectionSubItm{Platforms:}{Linux(Arch), MacOS, Windows}
+    \resumeSectionSubItm{Languages:}{English, Chinese (Mandarin)}
+    \resumeSectionSubItm{\small{Other skills: \vspace{-0.5mm}\newline (Very Basic Level)}}{JavaScript, C++, Swift, OpenGL, GLSL, Godot engine}
 \end{itemize}
 \vspace{-2.5mm}
 
