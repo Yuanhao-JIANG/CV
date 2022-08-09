@@ -1,14 +1,14 @@
 \documentclass[12pt, a4paper]{article}
-
 \usepackage{hyperref, enumitem, geometry, tabularx, titlesec}
-
 \geometry{tmargin=0.65in, lmargin=0.63in, rmargin=0.62in, bmargin=0.72in}
 
-\renewcommand{\labelitemii}{$\circ$}
-\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}
-[\titlerule \vspace{-6pt}]
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[
+    \titlerule \vspace{-6pt}
+]
 
 %---------------------------------NEW COMMAND---------------------------------
+\renewcommand{\labelitemii}{$\circ$}
+
 \newcommand{\resumeSection}[1]{
     \section*{#1}
 }
@@ -34,7 +34,6 @@
 \item \textbf{#1: }{#2}\vspace{-2mm}
 }
 
-
 \begin{document}
 %-----------------------------------HEADING-----------------------------------
 \begin{table}[htpb]
@@ -54,14 +53,16 @@
 %------------------------------------INTRO------------------------------------
 \resumeSection{Intro}
 \begin{itemize}[leftmargin=*]
-    \resumeSectionSubItmI{Seeking for a better learning environment and 
-        inspirations, I chose to move from mainland China to Hong Kong, 
-        then toEdinburgh, UK}
-    \resumeSectionSubItmI{Being a math and statistics student, I also have 
-        great interests in the fields of computer science and graphic design, 
-        and I self-taught game development, web development and so on. 
-        Currently I am focusing on Machine Learning, Reinforcement Learning 
-        and related areas.}
+    \resumeSectionSubItmI{
+        Seeking for a better learning environment and inspirations, I chose 
+        to move from mainland China to Hong Kong, then toEdinburgh, UK
+    }
+    \resumeSectionSubItmI{
+        Being a math and statistics student, I also have great interests in 
+        the fields of computer science and graphic design, and I self-taught 
+        game development, web development and so on. Currently I am focusing 
+        on Machine Learning, Reinforcement Learning and related areas.
+    }
 \end{itemize}
 \vspace{-3mm}
 
@@ -90,14 +91,17 @@
 %--------------------------------SKILLS SUMMARY-------------------------------
 \resumeSection{Skills Summary}
 \begin{itemize}[leftmargin=*]
-    \resumeSectionSubItm{Programming \\Languages:}{Python, Java, R, HTML, CSS, 
-        LaTex, C, Processing, MIPS assembly}
-    \resumeSectionSubItm{Tools \& Frameworks:}{VIM, PyTorch, Git, LWJGL, 
-        Bootstrap, SQLite}
-    \resumeSectionSubItm{Platforms:}{Linux(Arch), MacOS, Windows}
+    \resumeSectionSubItm{Programming \\Languages:}{
+        Python, Java, R, HTML, CSS, LaTex, C, Processing, MIPS assembly
+    }
+    \resumeSectionSubItm{Tools \& Frameworks:}{
+        VIM, PyTorch, Git, LWJGL, Bootstrap, SQLite
+    }
+    \resumeSectionSubItm{Platforms:}{Linux(Arch Based), MacOS, Windows}
     \resumeSectionSubItm{Languages:}{English, Chinese (Mandarin)}
-    \resumeSectionSubItm{\small{Other skills: \vspace{-0.5mm}\newline (Very 
-        Basic Level)}}{JavaScript, C++, Swift, OpenGL, GLSL, Godot engine}
+    \resumeSectionSubItm{
+        \small{Other skills: \vspace{-0.5mm}\newline (Very Basic Level)}
+    }{JavaScript, C++, Swift, OpenGL, GLSL, Godot engine}
 \end{itemize}
 \vspace{-2.5mm}
 
@@ -109,12 +113,18 @@
     {WeChat Assistant}{Sept 2021 - Present}
     \vspace{-2mm}
     \begin{itemize}[leftmargin=*]
-        \resumeSectionSubItmI{In charge of the management of the WeChat 
-            account and related student and alumni groups}
-        \resumeSectionSubItmI{Searching and examining opportunities and events 
-            across UK and China and post to student and alumni groups}
-        \resumeSectionSubItmI{Contact various employer to ensure the accuracy 
-            of the opportunities provided}
+        \resumeSectionSubItmI{
+            In charge of the management of the WeChat account and related 
+            student and alumni groups
+        }
+        \resumeSectionSubItmI{
+            Searching and examining opportunities and events across UK and 
+            China and post to student and alumni groups
+        }
+        \resumeSectionSubItmI{
+            Contact various employer to ensure the accuracy of the 
+            opportunities provided
+        }
     \end{itemize}
 \end{itemize}
 \vspace{-3mm}
@@ -142,3 +152,4 @@
 \end{itemize}
 
 \end{document}
+
