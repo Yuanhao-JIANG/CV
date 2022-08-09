@@ -1,6 +1,6 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage{hyperref, enumitem, geometry, tabularx, titlesec}
-\geometry{tmargin=0.65in, lmargin=0.63in, rmargin=0.62in, bmargin=0.72in}
+\geometry{tmargin=0.65in, lmargin=0.6in, rmargin=0.5in, bmargin=0.72in}
 
 \titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[
     \titlerule \vspace{-6pt}
@@ -18,6 +18,14 @@
     \begin{tabular*}{0.96\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
         \textbf{#1} & #2 \\
         \textit{\textbf{#3}} & \textit{#4}
+    \end{tabular*}
+}
+
+\newcommand{\resumeResearchItm}[2]{
+\item
+    \begin{tabular*}{0.96\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \hspace{-1.5mm}\textit{\textbf{#1}} & \\
+        \hspace{0.5mm}\textit{#2} &
     \end{tabular*}
 }
 
@@ -74,7 +82,7 @@
     {BSc Hons Mathematics and Statistics}{Sept 2020 - Present}
     \vspace{1mm}\newline 
     \textit{\footnotesize\textbf{Year 1:} First Class}\\
-    \textit{\footnotesize\textbf{Year 2:} Predicted First Class}
+    \textit{\footnotesize\textbf{Year 2:} First Class}
 \end{itemize}
 \vspace{-6.5mm}
 \begin{itemize}[leftmargin=*]
@@ -104,6 +112,33 @@
     }{JavaScript, C++, Swift, OpenGL, GLSL, Godot engine}
 \end{itemize}
 \vspace{-2.5mm}
+
+%---------------------------------RESEARCH----------------------------------
+\resumeSection{Research}
+\begin{itemize}[leftmargin=*]
+    \resumeResearchItm{
+        Mathematics of Reinforcement Learning with Applications to 
+        Quantitative Finance
+    }{June 2022 - Present}
+    \vspace{-2mm}
+    \begin{itemize}[leftmargin=*]
+        \resumeSectionSubItmI{
+            Construct environment for our quantitative finance scenario.
+        }
+        \resumeSectionSubItmI{
+            Implementing various algorithms including Actor-Critic, REINFORCE,
+            and PPO to solve our problem. 
+        }
+        \resumeSectionSubItmI{
+            Train, adjust and compare different algorithms for efficiency and
+            effectiveness.
+        }
+        \resumeSectionSubItmII{GitHub repository}{
+        \href{https://github.com/Yuanhao-JIANG/RL-in-QF}
+        {github.com/Yuanhao-JIANG/RL-in-QF}}
+    \end{itemize}
+\end{itemize}
+\vspace{-3mm}
 
 %---------------------------------EXPERIENCE----------------------------------
 \resumeSection{Experience}
