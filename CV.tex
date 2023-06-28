@@ -1,5 +1,5 @@
 \documentclass[12pt, a4paper]{article}
-\usepackage{hyperref, enumitem, geometry, tabularx, titlesec}
+\usepackage{hyperref, enumitem, geometry, tabularx, titlesec, multirow, fix-cm}
 \geometry{tmargin=0.65in, lmargin=0.6in, rmargin=0.5in, bmargin=0.72in}
 
 \titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[
@@ -46,14 +46,10 @@
 %-----------------------------------HEADING-----------------------------------
 \begin{table}[htpb]
     \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r}
-        \textbf{\LARGE Yuanhao JIANG} & \\
-        \href{https://yuanhao-jiang.github.io/}
-        {Portfolio: yuanhao-jiang.github.io} &
-        Email: \href{mailto:}{yuanhaoj214@gmail.com}\\
-        \href{https://github.com/Yuanhao-JIANG}
-        {Github: github.com/Yuanhao-JIANG} & Mobile: +44 07410581013\\
-        %\href{https://www.linkedin.com/in/yuanhao-jiang-94a024208}
-        %{LinkedIn: linkedin.com/in/yuanhao-jiang-94a024208}\\
+        \multirow{3}{25em}{\fontsize{34}{47}\selectfont Yuanhao JIANG}
+        & Mobile: +44 07410581013\\
+        & Email: \href{mailto:}{s2132254@ed.ac.uk}\\
+        & \href{https://github.com/Yuanhao-JIANG}{Github: github.com/Yuanhao-JIANG}\\
     \end{tabular*}
 \end{table}
 \vspace{-4mm}
@@ -79,45 +75,67 @@
 \begin{itemize}[leftmargin=*]
     \resumeSectionItm
     {The University of Edinburgh}{Scotland, UK}
-    {BSc Hons Mathematics and Statistics}{Sept 2020 - Present
+    {Mathematics and Statistics (BSc Hons)}{Sept 2020 - Present
     (graduate in 2024)}
-    \vspace{1mm}\newline
-    \textit{\footnotesize\textbf{Year 1:} First Class, average grade 92\%}\\
-    \textit{\footnotesize\textbf{Year 2:} First Class, average grade 90\%}\\
-    \textit{\footnotesize\textbf{Year 3:} Predicted First Class}
+    \begin{itemize}[leftmargin=*]
+        \item \it{\textbf{Grades:}}\\
+            \it{\footnotesize\textbf{Year 1:} First Class, average grade 92\%}
+            \hspace{5mm}\it{\footnotesize\textbf{Year 2:} First Class, average grade 90\%}\\
+            \it{\footnotesize\textbf{Year 3:} First Class, average grade 88\%}
+            \hspace{5mm}\it{\footnotesize\textbf{Year 4:} Predicted First Class}
+        \item \it{\textbf{Prizes and Medals:}}
+            \begin{itemize}[
+                align=left,
+                leftmargin=4em,
+                itemindent=0.5pt,
+                labelsep=0pt,
+                labelwidth=4em
+                ]
+                \item [\it{2021/22:}]
+                    \it{School of Mathematics College Vacation Scholarship}
+                \item [\it{2022/23:}]
+                    \it{James Ward Prize for distinguished performance in the
+                        Degree Examinations in Mathematics \& Statistics 3}
+                \item [\it{2022/23:}]
+                    \it{Arthur Erdelyi Prize for distinguished
+                    performance in the Degree Examinations for Mathematics 3}
+            \end{itemize}
+    \end{itemize}
 \end{itemize}
-\vspace{-6.5mm}
+\vspace{-5mm}
 \begin{itemize}[leftmargin=*]
     \resumeSectionItm
     {Hong Kong Baptist University}{Hong Kong}
     {BSc}{Sept 2019 - May 2020}
-    \vspace{1mm}\newline
-    \textit{\footnotesize\textbf{Year 1:} cGPA: 3.72/4}\\
-    \textit{\footnotesize Withdrew after year 1 and then came to the
-    University of Edinburgh}
+    \vspace{-1.5mm}
+    \begin{itemize}[leftmargin=*]
+        \item \it{\textbf{Grades:}}\\
+            \textit{\footnotesize\textbf{Year 1:} cGPA: 3.72/4}
+        \item \textit{\footnotesize Withdrew after year 1 and then came to the
+            University of Edinburgh}
+    \end{itemize}
 \end{itemize}
-\vspace{-5mm}
-
-%--------------------------------SKILLS SUMMARY-------------------------------
-\resumeSection{Skills Summary}
-\begin{itemize}[leftmargin=*]
-    \resumeSectionSubItm{Programming \\Languages:}{
-        Python, Java, R, HTML, CSS, \LaTeX{}, C, Processing, MIPS assembly
-    }
-    \resumeSectionSubItm{Tools \& Frameworks:}{
-        VIM, PyTorch, Git, LWJGL, Bootstrap
-    }
-    \resumeSectionSubItm{Platforms:}{Linux (Arch Based), MacOS, Windows}
-    \resumeSectionSubItm{Languages:}{English, Chinese (Mandarin)}
-    \resumeSectionSubItm{
-        \small{Other skills: \vspace{-0.5mm}\newline (Very Basic Level)}
-    }{JavaScript, C++, Haskell, Swift, OpenGL, GLSL, Godot engine, SQLite}
-\end{itemize}
-\vspace{-2.5mm}
+\vspace{-4mm}
 
 %---------------------------------RESEARCH----------------------------------
 \resumeSection{Research}
 \begin{itemize}[leftmargin=*]
+    \resumeResearchItm{Score-Based Diffusions \& Numerical Methods for
+    Stochastic Differential Equations}{May 2023 - Present}
+    \vspace{-2mm}
+    \begin{itemize}[leftmargin=*]
+        \resumeSectionSubItmI{Apply innovative approaches, especially the
+            Leimkuhler-Matthews discretization method, for solving SDEs, to both
+            the perturbation process and denoising process. Compare sample
+            quality and training efficiency with traditional numerical SDE
+            solvers including the Euler-Maruyama method, the Milstein method,
+        the stochastic Runge-Kutta method and so on}
+        \resumeSectionSubItmI{Embed the diffusion coefficient function in
+            perturbation SDE with spatial information to allow potentially
+        higher perturbation flexibility}
+        \resumeSectionSubItmI{GitHub repository will be released in due course}
+    \end{itemize}
+    \vspace{1mm}
     \resumeResearchItm{
         Mathematics of Reinforcement Learning with Applications to
         Quantitative Finance
@@ -140,7 +158,23 @@
         {github.com/Yuanhao-JIANG/RL-in-QF}}
     \end{itemize}
 \end{itemize}
-\vspace{-3mm}
+\vspace{-2mm}
+
+%--------------------------------SKILLS SUMMARY-------------------------------
+\resumeSection{Skills}
+\begin{itemize}[leftmargin=*]
+    \resumeSectionSubItm{Core softwares:}{
+        Python, R, Java, Haskell, Git, HTML, CSS, \LaTeX, C, Processing,
+        MIPS assembly
+    }
+    \resumeSectionSubItm{Tools \& Frameworks:}{
+        VIM, PyTorch, LWJGL, Bootstrap
+    }
+    \resumeSectionSubItm{Platforms:}{Linux (Arch Based), MacOS, Windows}
+    \resumeSectionSubItm{Languages:}{English, Chinese (Mandarin)}
+\end{itemize}
+\vspace{-1mm}
+
 
 %---------------------------------EXPERIENCE----------------------------------
 \resumeSection{Experience}
@@ -164,7 +198,7 @@
         }
     \end{itemize}
 \end{itemize}
-\vspace{-3mm}
+\vspace{-2mm}
 
 %----------------------------------PROJECTS-----------------------------------
 \resumeSection{Projects}
