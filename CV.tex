@@ -38,15 +38,13 @@
 \item {#1}\vspace{-2mm}
 }
 
-\newcommand{\resumeSectionSubItmII}[2]{
-\item \textbf{#1: }{#2}\vspace{-2mm}
-}
+\newcommand{\resumeSectionSubItmII}[1]{\item \textbf{#1}}
 
 \begin{document}
 %-----------------------------------HEADING-----------------------------------
 \begin{table}[htpb]
     \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r}
-        \multirow{3}{25em}{\fontsize{34}{47}\selectfont Yuanhao JIANG}
+        \multirow{3}{25em}{\fontsize{32}{47}\selectfont Yuanhao JIANG}
         & Mobile: +44 07410581013\\
         & Email: \href{mailto:}{s2132254@ed.ac.uk}\\
         & \href{https://github.com/Yuanhao-JIANG}{Github: github.com/Yuanhao-JIANG}\\
@@ -57,16 +55,15 @@
 %------------------------------------INTRO------------------------------------
 \resumeSection{Intro}
 \begin{itemize}[leftmargin=*]
-    \resumeSectionSubItmI{
-        Seeking for a better learning environment and inspirations, I chose
-        to move from mainland China to Hong Kong, then to Edinburgh, UK
-    }
-    \resumeSectionSubItmI{
-        Being a math and statistics student, I also have great interests in
-        the fields of computer science and graphic design, and I self-taught
-        game development, web development and so on. Currently I am focusing
-        on Machine Learning, Reinforcement Learning and related areas.
-    }
+    \resumeSectionSubItmI{Current undergraduate student with an interest in
+        machine learning and statistical modelling, particularly interested in
+        generative models. Research experience in score-based generative
+        modelling with SDEs and reinforcement learning with applications to
+        quantitative finance.}
+    \resumeSectionSubItmI{Ability to do both theoretical and computational
+        works, e.g., algorithm and model construction, numerical solutions,
+        statistical inference, pure mathematics works including algebra,
+    analysis, differential equations, SDEs and so on.}
 \end{itemize}
 \vspace{-3mm}
 
@@ -79,10 +76,10 @@
     (graduate in 2024)}
     \begin{itemize}[leftmargin=*]
         \item \it{\textbf{Grades:}}\\
-            \it{\footnotesize\textbf{Year 1:} First Class, average grade 92\%}
-            \hspace{5mm}\it{\footnotesize\textbf{Year 2:} First Class, average grade 90\%}\\
-            \it{\footnotesize\textbf{Year 3:} First Class, average grade 88\%}
-            \hspace{5mm}\it{\footnotesize\textbf{Year 4:} Predicted First Class}
+            \it{\footnotesize Year 1: First Class, average grade 92\%}
+            \hspace{5mm}\it{\footnotesize Year 2: First Class, average grade 90\%}\\
+            \it{\footnotesize Year 3: First Class, average grade 88\%}
+            \hspace{5mm}\it{\footnotesize Year 4: Predicted First Class}
         \item \it{\textbf{Prizes and Medals:}}
             \begin{itemize}[
                 align=left,
@@ -109,10 +106,10 @@
     {BSc}{Sept 2019 - May 2020}
     \vspace{-1.5mm}
     \begin{itemize}[leftmargin=*]
-        \item \it{\textbf{Grades:}}\\
-            \textit{\footnotesize\textbf{Year 1:} cGPA: 3.72/4}
-        \item \textit{\footnotesize Withdrew after year 1 and then came to the
-            University of Edinburgh}
+        \item \it{\textbf{Grades:}}
+            \textit{\footnotesize year 1 cGPA: 3.72/4}
+        \item \textit{\footnotesize Withdrew after finishing year 1 and then
+                came to the University of Edinburgh}
     \end{itemize}
 \end{itemize}
 \vspace{-4mm}
@@ -129,11 +126,11 @@
             the perturbation process and denoising process. Compare sample
             quality and training efficiency with traditional numerical SDE
             solvers including the Euler-Maruyama method, the Milstein method,
-        the stochastic Runge-Kutta method and so on}
+        the stochastic Runge-Kutta method and so on.}
         \resumeSectionSubItmI{Embed the diffusion coefficient function in
             perturbation SDE with spatial information to allow potentially
-        higher perturbation flexibility}
-        \resumeSectionSubItmI{GitHub repository will be released in due course}
+        higher perturbation flexibility.}
+        \resumeSectionSubItmI{GitHub repository will be released in due course.}
     \end{itemize}
     \vspace{1mm}
     \resumeResearchItm{
@@ -142,20 +139,14 @@
     }{Jun 2022 - Sep 2022}
     \vspace{-2mm}
     \begin{itemize}[leftmargin=*]
-        \resumeSectionSubItmI{
-            Construct environment for our quantitative finance scenario.
-        }
-        \resumeSectionSubItmI{
-            Implementing various algorithms including Actor-Critic, REINFORCE,
-            and PPO to solve our problem.
-        }
-        \resumeSectionSubItmI{
-            Train, adjust and compare different algorithms for efficiency and
-            effectiveness.
-        }
-        \resumeSectionSubItmII{GitHub repository}{
-        \href{https://github.com/Yuanhao-JIANG/RL-in-QF}
-        {github.com/Yuanhao-JIANG/RL-in-QF}}
+        \resumeSectionSubItmI{Construct interactive environment to model
+        specific quantitative finance scenario.}
+        \resumeSectionSubItmI{Implementing various model-free algorithms,
+            including Actor-Critic, REINFORCE, and Proximal Policy Optimization
+            (PPO), to train our pricing policy. Compare different algorithms for
+        training efficiency and effectiveness.}
+        \resumeSectionSubItmII{GitHub repository: }
+        \href{https://github.com/Yuanhao-JIANG/RL-in-QF}{github.com/Yuanhao-JIANG/RL-in-QF}
     \end{itemize}
 \end{itemize}
 \vspace{-2mm}
@@ -168,7 +159,7 @@
         MIPS assembly
     }
     \resumeSectionSubItm{Tools \& Frameworks:}{
-        VIM, PyTorch, LWJGL, Bootstrap
+        Vim, PyTorch, LWJGL, Bootstrap
     }
     \resumeSectionSubItm{Platforms:}{Linux (Arch Based), MacOS, Windows}
     \resumeSectionSubItm{Languages:}{English, Chinese (Mandarin)}
@@ -184,42 +175,60 @@
     {WeChat Assistant}{Sept 2021 - Sep 2022}
     \vspace{-2mm}
     \begin{itemize}[leftmargin=*]
-        \resumeSectionSubItmI{
-            In charge of the management of the WeChat account and related
-            student and alumni groups
-        }
-        \resumeSectionSubItmI{
-            Searching and examining opportunities and events across UK and
-            China and post to student and alumni groups
-        }
-        \resumeSectionSubItmI{
-            Contact various employer to ensure the accuracy of the
-            opportunities provided
-        }
+        \resumeSectionSubItmI{Manage the UoE Careers Service WeChat account,
+            group fresh students on their matriculation, and maintain alumni
+        groups.}
+        \resumeSectionSubItmI{Search and examine, share and post job
+        opportunities and career events across UK and China.}
+        \resumeSectionSubItmI{Keep in touch with employers, build employers
+            groups to provide more and better opportunities with up-to-date
+        information.}
     \end{itemize}
 \end{itemize}
 \vspace{-2mm}
 
 %----------------------------------PROJECTS-----------------------------------
-\resumeSection{Projects}
+\resumeSection{Own Projects}
 \vspace{1mm}
 \begin{itemize}[leftmargin=*]
-    \resumeSectionSubItmII{Light weight game engine}{Tech: Java, LWJGL,
-        OpenGL, GLSL and so on.\\ GitHub link:
-        \href{https://github.com/Yuanhao-JIANG/Java\_game\_engine}
-        {github.com/Yuanhao-JIANG/Java\_game\_engine}}
-    \resumeSectionSubItmII{Translation with RNN/Transformer}{Tech: Machine
-        Learning (RNN, Transformer), Python, PyTorch. GitHub link:
-        \href{https://github.com/Yuanhao-JIANG/ml-translation}
-        {github.com/Yuanhao-JIANG/ml-translation}}
+    \resumeSectionSubItmII{Translation with RNN/Transformer model}
+    \vspace{-2.5mm}
+    \begin{itemize}[leftmargin=*]
+        \item A program to train AI translators utilizing RNN or Transformer
+            models, able to translate from English to Chinese. The program is
+            written in Python with PyTorch and Fairseq (a sequence modeling
+            toolkit by Facebook).
+        \item Link: \href{https://github.com/Yuanhao-JIANG/ml-translation}
+            {github.com/Yuanhao-JIANG/ml-translation}
+    \end{itemize}
     \resumeSectionSubItmII{Handwriting recognition with CNN structure (LeNet)}
-        {Tech: Machine Learning (CNN), Python, Pytorch. GitHub link:
-        \href{https://github.com/Yuanhao-JIANG/ml-handwriting-recognition}
-        {github.com/Yuanhao-JIANG/ml-handwriting-recognition}}
+    \vspace{-2.5mm}
+    \begin{itemize}[leftmargin=*]
+        \item A handwriting recognition program utilizing a simple convolutional
+            neural network, LeNet. The program is written in Python with
+            PyTorch package.
+        \item Link: \href{https://github.com/Yuanhao-JIANG/ml-handwriting-recognition}
+            {github.com/Yuanhao-JIANG/ml-handwriting-recognition}
+    \end{itemize}
+    \resumeSectionSubItmII{Lightweight game engine}
+    \vspace{-2.5mm}
+    \begin{itemize}[leftmargin=*]
+        \item A lightweight Java game engine supports OpenGL. The engine is
+            written in Java, and is still under construction.
+        \item Link: \href{https://github.com/Yuanhao-JIANG/Java\_game\_engine}
+            {github.com/Yuanhao-JIANG/Java\_game\_engine}
+    \end{itemize}
     \resumeSectionSubItmII{Light weight parkour game written by Processing}
-        {Tech: Processing.\\ GitHub link:
-        \href{https://github.com/Yuanhao-JIANG/Parkour_game}
-        {github.com/Yuanhao-JIANG/Parkour\_game}}
+    \vspace{-2.5mm}
+    \begin{itemize}[leftmargin=*]
+        \item A small parkour game written in Processing. The game is simple
+            enough with only about 700 lines of codes, but it is the very first
+            program I wrote since I started to learn programming.
+        \item Link: \href{https://github.com/Yuanhao-JIANG/Parkour_game}
+            {github.com/Yuanhao-JIANG/Parkour\_game}
+    \end{itemize}
+    \resumeSectionSubItmII{For more projects visit my GitHub site:
+    \href{https://github.com/Yuanhao-JIANG}{github.com/Yuanhao-JIANG}}
 \end{itemize}
 
 \end{document}
