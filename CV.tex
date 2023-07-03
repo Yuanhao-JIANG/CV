@@ -21,11 +21,18 @@
     \end{tabular*}
 }
 
-\newcommand{\resumeResearchItm}[2]{
+\newcommand{\resumeEventItm}[2]{
 \item
     \begin{tabular*}{0.96\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-        \hspace{-1.5mm}\textit{\textbf{#1}} & \\
-        \hspace{0.5mm}\textit{#2} &
+        \textbf{#1} & \textit{#2}
+    \end{tabular*}
+}
+
+\newcommand{\resumeResearchItm}[2]{
+\item
+    \begin{tabular*}{0.96\textwidth}{r}
+        \hspace{-1.5mm}\textit{\textbf{#1}}\\
+        \hspace{0.5mm}\textit{#2}
     \end{tabular*}
 }
 
@@ -44,7 +51,7 @@
 %-----------------------------------HEADING-----------------------------------
 \begin{table}[htpb]
     \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r}
-        \multirow{3}{25em}{\fontsize{32}{47}\selectfont Yuanhao JIANG}
+        \multirow{3}{25em}{\fontsize{32}{40}\selectfont Yuanhao JIANG}
         & Mobile: +44 07410581013\\
         & Email: \href{mailto:}{s2132254@ed.ac.uk}\\
         & \href{https://github.com/Yuanhao-JIANG}{Github: github.com/Yuanhao-JIANG}\\
@@ -76,10 +83,10 @@
     (graduate in 2024)}
     \begin{itemize}[leftmargin=*]
         \item \it{\textbf{Grades:}}\\
-            \it{\footnotesize Year 1: First Class, average grade 92\%}
-            \hspace{5mm}\it{\footnotesize Year 2: First Class, average grade 90\%}\\
-            \it{\footnotesize Year 3: First Class, average grade 88\%}
-            \hspace{5mm}\it{\footnotesize Year 4: Predicted First Class}
+            \it{Year 1: First Class, average grade 92\%}
+            \hspace{5mm}\it{Year 2: First Class, average grade 90\%}\\
+            \it{Year 3: First Class, average grade 88\%}
+            \hspace{5mm}\it{Year 4: Predicted First Class}
         \item \it{\textbf{Prizes and Medals:}}
             \begin{itemize}[
                 align=left,
@@ -92,10 +99,12 @@
                     \it{School of Mathematics College Vacation Scholarship}
                 \item [\it{2022/23:}]
                     \it{James Ward Prize for distinguished performance in the
-                        Degree Examinations in Mathematics \& Statistics 3}
+                        Degree Examinations in Mathematics \& Statistics}
                 \item [\it{2022/23:}]
                     \it{Arthur Erdelyi Prize for distinguished
-                    performance in the Degree Examinations for Mathematics 3}
+                    performance in the Degree Examinations for Mathematics}
+                \item [\it{2022/23:}]
+                    \it{School of Mathematics College Vacation Scholarship}
             \end{itemize}
     \end{itemize}
 \end{itemize}
@@ -107,8 +116,8 @@
     \vspace{-1.5mm}
     \begin{itemize}[leftmargin=*]
         \item \it{\textbf{Grades:}}
-            \textit{\footnotesize year 1 cGPA: 3.72/4}
-        \item \textit{\footnotesize Withdrew after finishing year 1 and then
+            \textit{Year 1 cGPA: 3.72/4}
+        \footnotesize \item \textit{\footnotesize Withdrew after finishing year 1 and then
                 came to the University of Edinburgh}
     \end{itemize}
 \end{itemize}
@@ -170,6 +179,21 @@
 %---------------------------------EXPERIENCE----------------------------------
 \resumeSection{Experience}
 \begin{itemize}[leftmargin=*]
+    \resumeEventItm{2023 LMS Undergraduate Summer
+    School}{16th - 28th July 2023}
+    \vspace{-2mm}
+    \begin{itemize}[leftmargin=*]
+        \resumeSectionSubItmI{The undergraduate summer school held by London
+        Mathematical Society (LMS) with 50 places each year.}
+        \resumeSectionSubItmI{Consists of a combination of
+            short lecture courses with problem-solving sessions and
+            colloquium-style talks from leading mathematicians, covering various
+            fields of mathematics including probability theory, statistics,
+            information theory, complex analysis, mathematical physics,
+            computational number theory, Uncertainty quantification for computer
+        models and so on.}
+    \end{itemize}
+    \vspace{0mm}
     \resumeSectionItm
     {Careers Service, the University of Edinburgh}{Part time}
     {WeChat Assistant}{Sept 2021 - Sep 2022}
@@ -192,7 +216,7 @@
 \vspace{1mm}
 \begin{itemize}[leftmargin=*]
     \resumeSectionSubItmII{Translation with RNN/Transformer model}
-    \vspace{-2.5mm}
+    \vspace{-3mm}
     \begin{itemize}[leftmargin=*]
         \item A program to train AI translators utilizing RNN or Transformer
             models, able to translate from English to Chinese. The program is
@@ -200,33 +224,33 @@
             toolkit by Facebook).
         \item Link: \href{https://github.com/Yuanhao-JIANG/ml-translation}
             {github.com/Yuanhao-JIANG/ml-translation}
-    \end{itemize}
+    \end{itemize}\vspace{-3.5mm}
     \resumeSectionSubItmII{Handwriting recognition with CNN structure (LeNet)}
-    \vspace{-2.5mm}
+    \vspace{-3mm}
     \begin{itemize}[leftmargin=*]
         \item A handwriting recognition program utilizing a simple convolutional
             neural network, LeNet. The program is written in Python with
             PyTorch package.
         \item Link: \href{https://github.com/Yuanhao-JIANG/ml-handwriting-recognition}
             {github.com/Yuanhao-JIANG/ml-handwriting-recognition}
-    \end{itemize}
+    \end{itemize}\vspace{-3.5mm}
     \resumeSectionSubItmII{Lightweight game engine}
-    \vspace{-2.5mm}
+    \vspace{-3mm}
     \begin{itemize}[leftmargin=*]
         \item A lightweight Java game engine supports OpenGL. The engine is
             written in Java, and is still under construction.
         \item Link: \href{https://github.com/Yuanhao-JIANG/Java\_game\_engine}
             {github.com/Yuanhao-JIANG/Java\_game\_engine}
-    \end{itemize}
+    \end{itemize}\vspace{-3.5mm}
     \resumeSectionSubItmII{Light weight parkour game written by Processing}
-    \vspace{-2.5mm}
+    \vspace{-3mm}
     \begin{itemize}[leftmargin=*]
         \item A small parkour game written in Processing. The game is simple
             enough with only about 700 lines of codes, but it is the very first
             program I wrote since I started to learn programming.
         \item Link: \href{https://github.com/Yuanhao-JIANG/Parkour_game}
             {github.com/Yuanhao-JIANG/Parkour\_game}
-    \end{itemize}
+    \end{itemize}\vspace{-3.5mm}
     \resumeSectionSubItmII{For more projects visit my GitHub site:
     \href{https://github.com/Yuanhao-JIANG}{github.com/Yuanhao-JIANG}}
 \end{itemize}
