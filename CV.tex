@@ -1,273 +1,79 @@
-\documentclass[12pt, a4paper]{article}
-\usepackage{hyperref, enumitem, geometry, tabularx, titlesec, multirow, fix-cm}
-\geometry{tmargin=0.65in, lmargin=0.6in, rmargin=0.5in, bmargin=0.72in}
+\documentclass[12pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}        % options: casual, classic, banking, oldstyle, fancy
+\moderncvcolor{grey}           % options: blue, black, grey, green, red, purple
+% \setlength{\hintscolumnwidth}{2.5cm}  % Adjust the left column width
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}  % Latin Modern fonts
+\usepackage[scale=0.8]{geometry}
 
-\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[
-    \titlerule \vspace{-6pt}
-]
-
-%---------------------------------NEW COMMAND---------------------------------
-\renewcommand{\labelitemii}{$\circ$}
-
-\newcommand{\resumeSection}[1]{
-    \section*{#1}
-}
-
-\newcommand{\resumeSectionItm}[4]{
-\item
-    \begin{tabular*}{0.96\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-        \textbf{#1} & #2 \\
-        \textit{\textbf{#3}} & \textit{#4}
-    \end{tabular*}
-}
-
-\newcommand{\resumeEventItm}[2]{
-\item
-    \begin{tabular*}{0.96\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-        \textbf{#1} & \textit{#2}
-    \end{tabular*}
-}
-
-\newcommand{\resumeResearchItm}[3]{
-\item
-    \begin{tabular*}{0.96\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-        \multicolumn{2}{@{} l}{\textit{\textbf{#1}}}\\
-        \textit{#2} & \textit{#3}\hspace{3mm}
-    \end{tabular*}
-}
-
-\newcommand{\resumeSectionSubItm}[2]{
-\item
-    \textbf{\parbox[t]{3.7cm}{#1\hfill}}\parbox[t]{14cm}{#2}\vspace{-2mm}
-}
-
-\newcommand{\resumeSectionSubItmI}[1]{
-\item {#1}\vspace{-2mm}
-}
-
-\newcommand{\resumeSectionSubItmII}[1]{\item \textbf{#1}}
+% Personal data
+\name{Yuanhao}{Jiang}
+\title{PhD Student in Applied and Computational Mathematics}
+\address{The University of Edinburgh}{}{United Kingdom}
+\email{yuanhao.jiang@ed.ac.uk}
+\social[github]{Yuanhao-JIANG}
+\social[linkedin]{yuanhao-jiang-94a024208}
+\homepage{yuanhaojiang.com}
+%\photo[64pt][0.4pt]{photo.jpg} % photo
 
 \begin{document}
-%-----------------------------------HEADING-----------------------------------
-\begin{table}[htpb]
-    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r}
-        \multirow{3}{25em}{\fontsize{32}{40}\selectfont Yuanhao JIANG}
-        & Mobile: 07410581013\\
-        & Email: \href{mailto:}{yuanhao.jiang@wolfson.ox.ac.uk}\\
-        & GitHub: \href{https://github.com/Yuanhao-JIANG}
-        {github.com/Yuanhao-JIANG}\\
-    \end{tabular*}
-\end{table}
-\vspace{-4mm}
+\makecvtitle
 
-%------------------------------------INTRO------------------------------------
-\resumeSection{Intro}
-\begin{itemize}[leftmargin=*]
-    \resumeSectionSubItmI{Current MSc Statistics student with an interest in
-        statistical machine learning, modelling and reinforcement learning, particularly
-        generative modelling and computer vision. Research experience in
-        score-based generative modelling with stochastic differential equations
-        (SDEs) and reinforcement learning with applications to quantitative
-    finance.}
-    \resumeSectionSubItmI{Able to undertake both theoretical and computational
-        works, e.g., software development, statistical inference and modelling,
-        Bayesian inference and data analysis, operational research and
-        optimization, pure mathematics works including algebra, analysis,
-        differential equations, SDEs, and so on.}
-\end{itemize}
-\vspace{-3mm}
+%----------------------------------------------------------
+\section{Research Interests}
+Current PhD student in Applied and Computational Mathematics with research interests in molecular dynamics, stochastic simulation, non-equilibrium thermodynamics, diffusion generative models, and the intersection of statistical mechanics and machine learning.
 
-%----------------------------------EDUCATION----------------------------------
-\resumeSection{Education}
-\begin{itemize}[leftmargin=*]
-    \resumeSectionItm
-	{University of Oxford}{Oxford, England, UK}
-    {MSc in Statistical Science}{Sep. 2024. - Present}
-\end{itemize}
-\begin{itemize}[leftmargin=*]
-    \resumeSectionItm
-    {The University of Edinburgh}{Edinburgh, Scotland, UK}
-    {BSc (Hons) in Mathematics and Statistics}{Sep. 2020 - May. 2024}
-    \begin{itemize}[leftmargin=*]
-        \vspace{-1mm}
-        \item \it{\textbf{Qualification:} \textbf{First Class}, average grade 86. \textbf{Ranked 1\textsuperscript{st} of 71 students.}}
-        \item \it{\textbf{Prizes and Medals:}}
-            \begin{itemize}[
-                align=left,
-                leftmargin=4em,
-                itemindent=0.5pt,
-                labelsep=0pt,
-                labelwidth=4em
-                ]
-                \item [\it{2021/22:}]
-                    \it{School of Mathematics College Vacation Scholarship}
-                \item [\it{2022/23:}]
-                    \it{James Ward Prize for distinguished performance in the
-                        Degree Examinations in Mathematics \& Statistics}
-                \item [\it{2022/23:}]
-                    \it{Arthur Erdelyi Prize for distinguished
-                    performance in the Degree Examinations for Mathematics}
-                \item [\it{2022/23:}]
-                    \it{School of Mathematics College Vacation Scholarship}
-                \item [\it{2023/24:}]
-                    \it{Lawley Memorial Prize. Awarded to the candidate with the most distinguished performance in the final degree examinations of the joint honours degree in Mathematics and Statistics.}
-            \end{itemize}
-        \item \it{\textbf{Dissertation:} Score-Based Diffusion Techniques and Diffusion Map Method for Generative Modelling.}
-    \end{itemize}
-\end{itemize}
-\vspace{-5.5mm}
-% \begin{itemize}[leftmargin=*]
-%     \resumeSectionItm
-%     {Hong Kong Baptist University}{Hong Kong, China}
-%     {BSc in Mathematics (Year 1)}{Sep. 2019 - May 2020}
-%     \vspace{-1.5mm}
-%     \begin{itemize}[leftmargin=*]
-%         \item \it{\textbf{Grades:}}
-%             \textit{Year 1 cGPA: 3.72/4}
-%         \footnotesize \item \textit{\footnotesize Withdrew after successfully
-%             finishing year 1 and began at the University of Edinburgh}
-%     \end{itemize}
-% \end{itemize}
-% \vspace{-4mm}
+%----------------------------------------------------------
+\section{Education}
+\cventry{2025--Present}{PhD Student in Applied and Computational Mathematics}{The University of Edinburgh}{}{}{
+  Supervisors: Prof. Benedict Leimkuhler and Dr. Nikolay Malkin.\\
+  Research focus: Non-equilibrium thermodynamics, thermostats, and diffusion-based generative models.
+}
 
-%---------------------------------RESEARCH----------------------------------
-\resumeSection{Research}
-\begin{itemize}[leftmargin=*]
-    \resumeResearchItm{Score-Based Diffusion using Constrained Dynamics}{Supervisor: Prof. Benedict Leimkuhler}
-    {June 2024 - Oct. 2024}\vspace{-2mm}
-    \begin{itemize}[leftmargin=*]
-        \setlength\itemsep{2mm}
-        \resumeSectionSubItmI{We are trying to apply constrained SDEs in score-based diffusion models to restrict the data points on Riemannian manifolds, potentially allowing more structural and controllable data perturbation and data generation.}
-    \end{itemize}\vspace{1mm}
-    \resumeResearchItm{Score-Based Diffusion \& Numerical Methods for
-    Stochastic Differential Equations}{Supervisor: Prof. Benedict Leimkuhler}
-    {May 2023 - Sep. 2023}\vspace{-2mm}
-    \begin{itemize}[leftmargin=*]
-        \setlength\itemsep{2mm}
-        \resumeSectionSubItmI{Applied innovative approaches, especially the
-            Leimkuhler-Matthews discretization method, for solving SDEs, to both
-            the perturbation process and denoising process. Compared sample
-            quality and training efficiency with traditional numerical SDE
-            solvers including the Euler-Maruyama method, the Milstein method,
-        the stochastic Runge-Kutta method and so on.}
-        \resumeSectionSubItmI{Embedded the diffusion coefficient function in
-            perturbation SDE with spatial information to allow potentially
-        higher perturbation flexibility.}
-        % \resumeSectionSubItmI{GitHub repository will be released in due course.}
-    \end{itemize}\vspace{1mm}
-    \resumeResearchItm{\hspace{-1.2mm}
-        Mathematics of Reinforcement Learning with Applications to
-        Quantitative Finance
-    }{Supervisor: Prof. Lukasz Szpruch}{Jun. 2022 - Sep. 2022}\vspace{-2mm}
-    \begin{itemize}[leftmargin=*]
-        \setlength\itemsep{2mm}
-        \resumeSectionSubItmI{Constructed interactive environment to model
-        specific quantitative finance scenario.}
-        \resumeSectionSubItmI{Implemented various model-free algorithms,
-            including Actor-Critic, REINFORCE, and Proximal Policy Optimization
-            (PPO), to train our pricing policy. Compared different algorithms
-        for training efficiency and effectiveness.}
-        \resumeSectionSubItmII{GitHub repository: }
-        \href{https://github.com/Yuanhao-JIANG/RL-in-QF}{github.com/Yuanhao-JIANG/RL-in-QF}
-    \end{itemize}
-\end{itemize}
-\vspace{-2mm}
+\cventry{2024--2025}{MSc in Statistical Science}{The University of Oxford}{}{}{
+  Dissertation: \textit{Score-Based Diffusion Models for Protein Backbone Generation} (Supervisor: Prof. George Deligiannidis, GitHub: \href{https://github.com/Yuanhao-JIANG/protein-backbone-diffusion}{github.com/Yuanhao-JIANG/protein-backbone-diffusion}).
+}
 
-%--------------------------------SKILLS SUMMARY-------------------------------
-\resumeSection{Skills}
-\begin{itemize}[leftmargin=*]
-    \resumeSectionSubItm{Core softwares:}{
-        Python, R, Java, Haskell, HTML, CSS, \LaTeX, C, Processing, MIPS assembly, Swift, Docker, Node.js, Pacman, Vim, Git, Conda, PyTorch, LWJGL, Bootstrap, Jekyll, ......
-    }
-    % \resumeSectionSubItm{Platforms:}{Linux (Arch Based, Ubuntu), MacOS, Windows}
-    % \resumeSectionSubItm{Languages:}{English, Chinese (Mandarin)}
-\end{itemize}
-\vspace{-1mm}
+\cventry{2020--2024}{BSc (Hons) in Mathematics and Statistics}{The University of Edinburgh}{}{}{
+  Qualification: First Class Honours, average grade 86 (ranked 1st of 71 students).\\
+  Dissertation: \textit{Score-Based Diffusion Techniques and Diffusion Map Method for Generative Modeling} (Supervisor: Prof. Benedict Leimkuhler).
+}
 
+%----------------------------------------------------------
+\section{Research Experience}
+\cventry{Summer 2024}{Summer Research Student}{The University of Edinburgh}{}{}{
+  Applied constrained SDEs in score-based diffusion models to restrict the data points on Riemannian manifolds, potentially allowing more structural and controllable data perturbation and data generation.
+}
+\cventry{Summer 2023}{Summer Research Student}{The University of Edinburgh}{}{}{
+  Applied innovative approaches, especially the Leimkuhler-Matthews discretization method, for solving SDEs, to both the perturbation process and denoising process. Compared sample quality and training efficiency with traditional numerical SDE solvers including the Euler-Maruyama method, the Milstein method, the stochastic Runge-Kutta method and so on. Embedded the diffusion coefficient function in perturbation SDE with spatial information to allow potentially higher perturbation flexibility.
+}
+\cventry{Summer 2022}{Summer Research Student}{The University of Edinburgh}{}{}{
+  Constructed interactive environment to model specific quantitative finance scenario. Implemented various model-free algorithms, including Actor-Critic, REINFORCE, and Proximal Policy Optimization (PPO), to train our pricing policy. Compared different algorithms for training efficiency and effectiveness.
+  GitHub: \href{https://github.com/Yuanhao-JIANG/RL-in-QF}{github.com/Yuanhao-JIANG/RL-in-QF}.
+}
 
-%---------------------------------EXPERIENCE----------------------------------
-\resumeSection{Experience}
-\begin{itemize}[leftmargin=*]
-    \resumeSectionItm{\href{https://www.lms.ac.uk/events/lms-summer-schools}
-    {London Mathematical Society Undergraduate Summer School 2023}}
-    {}{Summer School Delegate}{16th - 28th Jul. 2023}\vspace{-2mm}
-    \begin{itemize}[leftmargin=*]
-        \setlength\itemsep{1.5mm}
-        \resumeSectionSubItmI{Nominated by the School of Mathematics at the
-            University of Edinburgh as one of the 50 students in the UK to
-        attend.}
-        \resumeSectionSubItmI{Consists of a combination of
-            short lecture courses with problem-solving sessions and
-            colloquium-style talks from leading mathematicians, covering various
-            fields of mathematics including probability theory, statistics,
-            information theory, complex analysis, mathematical physics,
-            computational number theory, Uncertainty quantification for computer
-        models and so on.}
-    \end{itemize}\vspace{0mm}
-    \resumeSectionItm
-    {Careers Service, The University of Edinburgh}{Part time}
-    {WeChat Assistant}{Sep. 2021 - Sep. 2022}\vspace{-2mm}
-    \begin{itemize}[leftmargin=*]
-        \setlength\itemsep{1.5mm}
-        \resumeSectionSubItmI{Managed the UoE Careers Service WeChat account
-            with more than 1500 students each year, grouped fresh students on
-            their matriculation, and maintained alumni groups.}
-        \resumeSectionSubItmI{Searched, examined, shared and posted job
-        opportunities and career events across UK and China.}
-        \resumeSectionSubItmI{Kept in touch with employers, built employers
-            groups to provide more and better opportunities with up-to-date
-        information.}
-    \end{itemize}
-\end{itemize}
-\vspace{-2mm}
+%----------------------------------------------------------
+\section{Technical Skills and Languages}
+\cvitem{Software}{Python, PyTorch, R, Java, C, Haskell, HTML/CSS, \dots}
+\cvitem{Language}{English (professional), Chinese (native), Swedish (Elementary).}
 
-%----------------------------------PROJECTS-----------------------------------
-\resumeSection{Personal Projects}
-\vspace{1mm}
-\begin{itemize}[leftmargin=*]
-    \resumeSectionSubItmII{Translation with RNN/Transformer model}
-    \vspace{-3mm}
-    \begin{itemize}[leftmargin=*]
-        \setlength\itemsep{-0.3mm}
-        \item AI translators utilizing RNN or Transformer
-            models, able to translate from English to Chinese. The program is
-            written in Python with PyTorch and Fairseq.
-        \item Repository: \href{https://github.com/Yuanhao-JIANG/ml-translation}
-            {github.com/Yuanhao-JIANG/ml-translation}
-    \end{itemize}\vspace{-3.5mm}
-    \resumeSectionSubItmII{Handwriting recognition with CNN structure (LeNet)}
-    \vspace{-3mm}
-    \begin{itemize}[leftmargin=*]
-        \setlength\itemsep{-0.3mm}
-        \item A handwriting recognition program utilizing a simple convolutional
-            neural network, LeNet. The program is written in Python with
-            PyTorch package.
-        \item Repository:
-            \href{https://github.com/Yuanhao-JIANG/ml-handwriting-recognition}
-            {github.com/Yuanhao-JIANG/ml-handwriting-recognition}
-    \end{itemize}\vspace{-3.5mm}
-    \resumeSectionSubItmII{Lightweight game engine}
-    \vspace{-3mm}
-    \begin{itemize}[leftmargin=*]
-        \setlength\itemsep{-0.3mm}
-        \item A lightweight Java game engine that supports OpenGL. The engine is still under construction.
-        \item Repository:
-            \href{https://github.com/Yuanhao-JIANG/Java\_game\_engine}
-            {github.com/Yuanhao-JIANG/Java\_game\_engine}
-    \end{itemize}\vspace{-3.5mm}
-    % \resumeSectionSubItmII{Light weight parkour game written by Processing}
-    % \vspace{-3mm}
-    % \begin{itemize}[leftmargin=*]
-    %     \setlength\itemsep{-0.3mm}
-    %     \item A small parkour game written in Processing. The game is simple
-    %         enough with only about 700 lines of codes, but it is the very first
-    %         program I wrote since I started to learn programming 6 years ago.
-    %     \item Repository: \href{https://github.com/Yuanhao-JIANG/Parkour_game}
-    %         {github.com/Yuanhao-JIANG/Parkour\_game}
-    % \end{itemize}\vspace{-3.5mm}
-    \resumeSectionSubItmII{For more projects visit my GitHub site:
-    \href{https://github.com/Yuanhao-JIANG}{github.com/Yuanhao-JIANG}}
-\end{itemize}
+%----------------------------------------------------------
+\section{Awards and Scholarships}
+\cvitem{2025--2029}{School of Mathematics Studentship, the University of Edinburgh.}
+\cvitem{2024}{Lawley Memorial Prize, the University of Edinburgh. Awarded to the candidate with the most distinguished performance in the final degree examinations of the joint honours degree in Mathematics and Statistics.}
+\cvitem{2023}{School of Mathematics College Vacation Scholarship, the University of Edinburgh.}
+\cvitem{2023}{Arthur Erdelyi Prize for distinguished performance in the Degree Examinations for Mathematics, the University of Edinburgh.}
+\cvitem{2023}{James Ward Prize for distinguished performance in the Degree Examinations in Mathematics \& Statistics, the University of Edinburgh.}
+\cvitem{2022}{School of Mathematics College Vacation Scholarship, the University of Edinburgh.}
+
+%----------------------------------------------------------
+\section{Other Experience}
+\cventry{Summer 2023}{\href{https://www.lms.ac.uk/events/lms-summer-schools}{London Mathematical Society Undergraduate Summer School}}{The University of Edinburgh}{}{}{
+  % Nominated by the School of Mathematics at the University of Edinburgh as one of the 50 students in the UK to attend.
+  Consists of a combination of short lecture courses with problem-solving sessions and colloquium-style talks from leading mathematicians, covering various fields of mathematics including probability theory, statistics, information theory, complex analysis, mathematical physics, computational number theory, Uncertainty quantification for computer models and so on.
+}
+\cventry{2021--2022}{Careers Service Assistant (Part-Time)}{Careers Service, The University of Edinburgh}{}{}{
+  Managed the University's Careers Service WeChat account, reaching over 1,500 students annually. Coordinated onboarding for new students and maintained alumni engagement groups. Shared job opportunities and career events. Liaised with employers and developed employer networks to improve the quality and timeliness of career information.
+}
 
 \end{document}
-
