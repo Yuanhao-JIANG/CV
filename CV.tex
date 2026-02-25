@@ -4,7 +4,7 @@
 % \setlength{\hintscolumnwidth}{2.5cm}  % Adjust the left column width
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}  % Latin Modern fonts
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.795]{geometry}
 
 % Personal data
 \name{Yuanhao}{Jiang}
@@ -21,7 +21,7 @@
 
 %----------------------------------------------------------
 \section{Research Interests}
-Current PhD student in Applied and Computational Mathematics with research interests in molecular dynamics, stochastic simulation, non-equilibrium thermodynamics, diffusion generative models, and the intersection of statistical mechanics and machine learning.
+Stochastic numerical methods for molecular dynamics and sampling, non-equilibrium statistical mechanics, diffusion-based generative models.
 
 %----------------------------------------------------------
 \section{Education}
@@ -41,22 +41,46 @@ Current PhD student in Applied and Computational Mathematics with research inter
 }
 
 %----------------------------------------------------------
+\section{Publications}
+
+\cvitem{2025}{Rajit Rajpal, Benedict Leimkuhler, Yuanhao Jiang.\newline
+\textbf{\href{https://openreview.net/pdf?id=rpOjSY8j7w}{Adaptive Stepsizing for Stochastic Gradient Langevin Dynamics in Bayesian Neural Networks}}.\newline
+\href{https://sites.google.com/view/math4aiworkshop/workshop}{Math4AI Workshop @ AAAI 2026.}
+(Oral presentation. Top 10\%).
+% \href{https://openreview.net/pdf?id=rpOjSY8j7w}{PDF} \quad | \quad \href{https://github.com/rajit906/SAM-ADAMS-IN-BDL}{Code}
+}
+
+%----------------------------------------------------------
 \section{Research Experience}
 \cventry{Summer 2024}{Summer Research Student}{The University of Edinburgh}{}{}{
   Applied constrained SDEs in score-based diffusion models to restrict the data points on Riemannian manifolds, potentially allowing more structural and controllable data perturbation and data generation.
 }
 \cventry{Summer 2023}{Summer Research Student}{The University of Edinburgh}{}{}{
-  Applied innovative approaches, especially the Leimkuhler-Matthews discretization method, for solving SDEs, to both the perturbation process and denoising process. Compared sample quality and training efficiency with traditional numerical SDE solvers including the Euler-Maruyama method, the Milstein method, the stochastic Runge-Kutta method and so on. Embedded the diffusion coefficient function in perturbation SDE with spatial information to allow potentially higher perturbation flexibility.
+  Applied innovative approaches, especially the Leimkuhler-Matthews discretization method, for solving SDEs in diffusion generative models, to both the perturbation and denoising process. Compared sample quality and training efficiency with traditional numerical SDE solvers including the Euler-Maruyama method, the Milstein method, the stochastic Runge-Kutta method and so on. Embedded the diffusion coefficient function in perturbation SDE with spatial information to allow potentially higher perturbation flexibility.
 }
 \cventry{Summer 2022}{Summer Research Student}{The University of Edinburgh}{}{}{
-  Constructed interactive environment to model specific quantitative finance scenario. Implemented various model-free algorithms, including Actor-Critic, REINFORCE, and Proximal Policy Optimization (PPO), to train our pricing policy. Compared different algorithms for training efficiency and effectiveness.
+  Constructed interactive environment to model specific quantitative finance scenario. Implemented various model-free algorithms, including Actor-Critic, REINFORCE, and PPO, to train our pricing policy. Compared different algorithms for training efficiency and effectiveness.
   GitHub: \href{https://github.com/Yuanhao-JIANG/RL-in-QF}{github.com/Yuanhao-JIANG/RL-in-QF}.
 }
 
 %----------------------------------------------------------
-\section{Technical Skills and Languages}
-\cvitem{Software}{Python, PyTorch, R, Java, C, Haskell, HTML/CSS, \dots}
-\cvitem{Language}{English (professional), Chinese (native), Swedish (Elementary).}
+\section{Teaching Experience}
+\cventry{2025--Present}{Tutor, \href{https://www.drps.ed.ac.uk/25-26/dpt/cxmath10067.htm}{Honours Complex Variables}}{The University of Edinburgh}{}{}{
+Delivered problem-solving tutorials for the Honours-level course Complex Variables.
+Guided students through contour integration, residue theory, conformal mappings, and analytic continuation. 
+Provided formative feedback on coursework and examinations.
+}
+
+%----------------------------------------------------------
+\section{Employment}
+\cventry{2021--2022}{Part-Time Assistant}{Careers Service, The University of Edinburgh}{}{}{
+  Managed the University's Careers Service WeChat account, reaching over 1,500 students annually. Coordinated onboarding for new students and maintained alumni engagement groups. Shared job opportunities and career events. Liaised with employers and developed employer networks to improve the quality and timeliness of career information.
+}
+
+%----------------------------------------------------------
+\section{Technical Expertise}
+\cvitem{Computing}{Scientific computing in Python (NumPy, SciPy, PyTorch); stochastic differential equations; Monte Carlo methods; Bayesian inference; numerical integration schemes for Langevin dynamics.}
+\cvitem{Languages}{English (professional), Chinese (native), Swedish (elementary).}
 
 %----------------------------------------------------------
 \section{Awards and Scholarships}
@@ -68,13 +92,10 @@ Current PhD student in Applied and Computational Mathematics with research inter
 \cvitem{2022}{School of Mathematics College Vacation Scholarship, the University of Edinburgh.}
 
 %----------------------------------------------------------
-\section{Other Experience}
-\cventry{Summer 2023}{\href{https://www.lms.ac.uk/events/lms-summer-schools}{London Mathematical Society Undergraduate Summer School}}{The University of Edinburgh}{}{}{
-  % Nominated by the School of Mathematics at the University of Edinburgh as one of the 50 students in the UK to attend.
-  Consists of a combination of short lecture courses with problem-solving sessions and colloquium-style talks from leading mathematicians, covering various fields of mathematics including probability theory, statistics, information theory, complex analysis, mathematical physics, computational number theory, Uncertainty quantification for computer models and so on.
-}
-\cventry{2021--2022}{Careers Service Assistant (Part-Time)}{Careers Service, The University of Edinburgh}{}{}{
-  Managed the University's Careers Service WeChat account, reaching over 1,500 students annually. Coordinated onboarding for new students and maintained alumni engagement groups. Shared job opportunities and career events. Liaised with employers and developed employer networks to improve the quality and timeliness of career information.
-}
+% \section{Other Experience}
+% \cventry{Summer 2023}{\href{https://www.lms.ac.uk/events/lms-summer-schools}{London Mathematical Society Undergraduate Summer School}}{The University of Edinburgh}{}{}{
+%   % Nominated by the School of Mathematics at the University of Edinburgh as one of the 50 students in the UK to attend.
+%   Consists of a combination of short lecture courses with problem-solving sessions and colloquium-style talks from leading mathematicians, covering various fields of mathematics including probability theory, statistics, information theory, complex analysis, mathematical physics, computational number theory, Uncertainty quantification for computer models and so on.
+% }
 
 \end{document}
